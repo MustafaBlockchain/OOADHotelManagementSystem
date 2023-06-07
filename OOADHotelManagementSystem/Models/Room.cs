@@ -11,5 +11,17 @@
         public int? Customer_ID { get; set; }
         public long Hotel_ID { get; set; }
         public string Room_condition { get; set; }
+
+        // Composition relationship
+        public Room_Condition RoomCondition { get; set; }
+
+        // Composition relationship
+        public Hotel Hotel { get; set; }
+
+        // Aggregation relationship
+        public Reservations Reservation { get; set; }
+
+        // Aggregation relationship
+        public Vendor Vendor { get; set; }
     }
 }

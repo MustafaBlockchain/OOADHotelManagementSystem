@@ -10,5 +10,8 @@
         public DateTime Payment_Date { get; set; }
         public int Customer_ID { get; set; }
         public long Hotel_ID { get; set; }
+
+        // Composition relationship
+        public InvoiceItems InvoiceItems { get; set; }
     }
 }
